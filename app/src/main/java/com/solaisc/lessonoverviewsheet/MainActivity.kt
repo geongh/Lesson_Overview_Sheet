@@ -73,6 +73,8 @@ import com.solaisc.lessonoverviewsheet.ui.theme.PurplePill
 import com.solaisc.lessonoverviewsheet.ui.theme.SecondaryText
 import com.solaisc.lessonoverviewsheet.ui.theme.SoftPink
 import com.solaisc.lessonoverviewsheet.ui.theme.Stroke
+import com.solaisc.lessonoverviewsheet.ui.theme.montserratFont
+import com.solaisc.lessonoverviewsheet.ui.theme.poltawskiFont
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -125,6 +127,7 @@ fun Content() {
                 Text(
                     text = "Physics Crash Course",
                     textAlign = if (!largerScreen) { TextAlign.Start } else TextAlign.Center,
+                    fontFamily = poltawskiFont,
                     fontSize = 32.sp,
                     fontWeight = FontWeight.Bold,
                     color = PrimaryText,
@@ -137,6 +140,7 @@ fun Content() {
                 Text(
                     text = "The Physics Crash Course offers a foundational overview of essential concepts, teaching learners to understand Newton's three laws of motion, explain the principle of energy conservation, distinguish between kinetic and potential energy with real-world examples, solve basic problems involving force and mass, and apply the concept of momentum in everyday situations",
                     textAlign = if (!largerScreen) { TextAlign.Start } else TextAlign.Center,
+                    fontFamily = montserratFont,
                     color = SecondaryText,
                     modifier = Modifier
                         .fillMaxWidth()
@@ -185,6 +189,7 @@ fun Content() {
                     text = "What you'll learn:",
                     fontSize = 20.sp,
                     fontWeight = FontWeight.Bold,
+                    fontFamily = montserratFont,
                     color = PrimaryText,
                     modifier = Modifier
                         .fillMaxWidth()
@@ -251,6 +256,7 @@ fun Footer() {
                 text = "Dr. Eleanor Maxwell",
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Bold,
+                fontFamily = montserratFont,
                 color = PrimaryText
             )
         }
@@ -277,6 +283,7 @@ fun ListItem(
         Text(
             text = text,
             fontSize = 20.sp,
+            fontFamily = montserratFont,
             color = SecondaryText,
             modifier = Modifier.weight(1f)
         )
@@ -321,6 +328,7 @@ fun Chip(
             Text(
                 text = text,
                 fontWeight = FontWeight.Bold,
+                fontFamily = montserratFont,
                 color = foreColor
             )
         }
